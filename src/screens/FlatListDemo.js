@@ -33,6 +33,7 @@ const FlatListDemo=()=>
 const styles=StyleSheet.create({
     text:{
         color:"green",
+        fontSize:20
     }
 });
 
