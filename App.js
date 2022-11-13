@@ -1,5 +1,5 @@
 import React from "react";
-import {View,StyleSheet,Button,Image} from "react-native";
+import {View,StyleSheet,Button,Alert} from "react-native";
 //import Button from "./src/screens/Button";
 
 
@@ -8,8 +8,8 @@ const App =()=>{
     <View style={Styles.v}>
             <Button title="Press Me"
             onPress={()=>{
-              //<Image style={Styles.i} source={require("./assets/my.jpg")}/>
-              console.log("Pressed ");
+               // console.log("Pressed ");
+            Alert.alert("Why You pressed the Button???")
             }}/>
     </View>
   )
