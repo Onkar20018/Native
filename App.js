@@ -6,9 +6,10 @@ import {View,StyleSheet,Button,Image} from "react-native";
 const App =()=>{
   return(
     <View style={Styles.v}>
-            <Button title="Press Ass"
+            <Button title="Press Me"
             onPress={()=>{
-              <Image style={Styles.i} source={require('./assets/My.jpg')}/>
+              //<Image style={Styles.i} source={require("./assets/my.jpg")}/>
+              console.log("Pressed ");
             }}/>
     </View>
   )
