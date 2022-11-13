@@ -6,10 +6,10 @@ import {View,StyleSheet,Button,Alert} from "react-native";
 const App =()=>{
   return(
     <View style={Styles.v}>
-            <Button title="Press Me"
+            <Button title=""
             onPress={()=>{
                // console.log("Pressed ");
-            Alert.alert("Why You pressed the Button???")
+            Alert.alert("Hello There!!")
             }}/>
     </View>
   )
