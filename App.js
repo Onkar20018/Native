@@ -1,22 +1,21 @@
 import React from "react";
-import {View,StyleSheet,Image} from "react-native";
-import FlatListDemo from "./src/screens/FlatListDemo";
-import Images from "./src/screens/Images";
+import {View,StyleSheet,Button,Image} from "react-native";
+//import Button from "./src/screens/Button";
+
 
 const App =()=>{
   return(
     <View style={Styles.v}>
-            
-       <Images/>
-       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
-       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
-       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
-       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
+            <Button title="Press Ass"
+            onPress={()=>{
+              <Image source={'./assets/'}/>
+            }}/>
     </View>
   )
 };
 const Styles= StyleSheet.create({
   v:{
+    height:760,
     display:"flex",
     justifyContent:"center",
     alignItems:"center"
