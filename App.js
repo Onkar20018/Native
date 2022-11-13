@@ -8,7 +8,7 @@ const App =()=>{
     <View style={Styles.v}>
             <Button title="Press Ass"
             onPress={()=>{
-              <Image source={'./assets/'}/>
+              <Image style={Styles.i} source={require('./assets/My.jpg')}/>
             }}/>
     </View>
   )
@@ -21,8 +21,8 @@ const Styles= StyleSheet.create({
     alignItems:"center"
   },
   i:{
-    height:250,
-    width:350,
+    height:100,
+    width:100,
     margin:12,
     borderColor:'blue',
     borderWidth:5
