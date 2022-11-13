@@ -12,8 +12,11 @@ const App =()=>{
 };
 const Styles= StyleSheet.create({
   v:{
-    marginLeft:150,
-    marginTop:260
+   
+    marginTop:260,
+    marginBottom:150,
+    borderColor:"red",
+    borderWidth:10
   }
 });
 
