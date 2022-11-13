@@ -1,22 +1,32 @@
 import React from "react";
-import {View,StyleSheet} from "react-native";
+import {View,StyleSheet,Image} from "react-native";
 import FlatListDemo from "./src/screens/FlatListDemo";
-
+import Images from "./src/screens/Images";
 
 const App =()=>{
   return(
     <View style={Styles.v}>
-       <FlatListDemo/>     
+            
+       <Images/>
+       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
+       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
+       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
+       <Image style={Styles.i} source={require("./assets/my.jpg")}></Image>
     </View>
   )
 };
 const Styles= StyleSheet.create({
   v:{
-   
-    marginTop:260,
-    marginBottom:150,
-    borderColor:"red",
-    borderWidth:10
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center"
+  },
+  i:{
+    height:250,
+    width:350,
+    margin:12,
+    borderColor:'blue',
+    borderWidth:5
   }
 });
 

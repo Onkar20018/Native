@@ -37,8 +37,7 @@ const FlatListDemo=()=>
         
         (element)=> {
         return(                   
-            <Text style={styles.text}>{element.item.name} {element.item.index}</Text>
-                   
+            <Text style={styles.text}>{element.item.name} {element.item.index}</Text>         
         )
       }
     } />
